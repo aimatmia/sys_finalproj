@@ -48,6 +48,25 @@ void Display_Word(){
     
 }
 
+char * tolowercase(char * word){
+  word;
+}
+
+int addtobank(char letter){
+  _LETTER_BANK[_LETTER_COUNTER] = letter;
+  return _LETTER_COUNTER++;
+}
+
+int checkanswer(char * guess){
+  return strstr(_LETTER_BANK, guess);
+}
+
+int checkletter(char letter){
+  return strchr(_LETTER_BANK, letter);
+}
+
+
+
 void Display(){
   Display_Word();
 }
